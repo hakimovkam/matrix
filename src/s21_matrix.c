@@ -84,14 +84,33 @@ void s21_remove_matrix(matrix_t *A) {
     }
     
     if (A->rows) {
-        A->rows = 0
+        A->rows = 0;
     }
     
     if (A->columns) {
-        A->columns = 0
+        A->columns = 0;
     }
 }
 
+int s21_eq_matrix(matrix_t *A, matrix_t *B) {
+    int err = 0;
+    int check_matrices_result = check_matrices(A, B);
+    if (A->rows != B->rows || A->columns != B->columns || check_matrices_result) {
+        err = 1;
+    }
+    
+    if (err != 1) {
+        for (int i = 0; i < A->rows; i++) {
+            for (int j = 0; j < A->columns; j++) {
+                if (fabs(A->matrix[i][j] - B->matrix[i][j]) > 1e-6) {
+                    err = 1;
+                    break;
+                }
+            }
+        }
+    }
+    return err;
+}
 
 void print_matrix(matrix_t *matrix) {
     for (int i = 0; i < matrix->rows; i++) {
@@ -100,4 +119,27 @@ void print_matrix(matrix_t *matrix) {
         }
         printf("\n");
     }
+}
+
+int check_matrices(matrix_t* A, matrix_t* B) {
+    int res_A = 0;
+    if (A == NULL) {
+        res_A = 1;
+    } else if (A->rows <= 0 || A->columns <= 0) {
+        res_A = 0;
+    }
+
+    int res_B = 0;
+    if (B == NULL) {
+        res_B = 1;
+    } else if (B->rows <= 0 || B->columns <= 0) {
+        res_B = 1;
+    }
+    
+    int res = 0;
+    if (res_A == 1 || res_B == 1) {
+        res = 1;
+    }
+    
+    return res;
 }
