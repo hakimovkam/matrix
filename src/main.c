@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
     if (creation_result1 == 0) {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                first.matrix[i][j] = 5;
+                first.matrix[i][j] = 5 + i + j;
             }
         }
 
@@ -28,38 +28,10 @@ int main(int argc, char *argv[]) {
     }
 
     matrix_t second;
-    int creation_result2 = s21_create_matrix(rows, cols, &second);
-
-    if (creation_result2 == 0) {
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                second.matrix[i][j] = 1;
-            }
-        }
-
-        printf("second\n");
-        print_matrix(&second);
-    } else {
-        printf("Ошибка при создании матрицы\n");
-    }
-
-    matrix_t result;
-    int creation_result3 = s21_create_matrix(rows, cols, &result);
-
-    if (creation_result3 == 0) {
-        s21_sub_matrix(&first, &second, &result);
-        
-        printf("result\n");
-        print_matrix(&result);
-    }
-//    s21_remove_matrix(&first);
-//
-//    if (my_matrix.matrix == NULL) {
-//        printf("Матрица очищена\n");
-//    } else {
-//        printf("Ошибка при очистке матрицы\n");
-//        print_matrix(&my_matrix);
-//    }
-
+    
+    s21_transpose(&first, &second);
+    printf("\n");
+    print_matrix(&second);
+    
     return 0;
 }
