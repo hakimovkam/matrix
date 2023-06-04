@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EBC65BF82A2C80DD009121C7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EBC65BF72A2C80DD009121C7 /* main.c */; };
+		EB5142292A2C845500E06AD6 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = EB5142282A2C845500E06AD6 /* Makefile */; };
+		EBEDA1FC2A2C8228008F5434 /* s21_matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = EBEDA1FB2A2C8228008F5434 /* s21_matrix.c */; };
+		EBEDA2042A2C824F008F5434 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EBEDA2032A2C824F008F5434 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EB5142282A2C845500E06AD6 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		EB51422B2A2C850900E06AD6 /* instructions_for_testing_rus.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = instructions_for_testing_rus.md; sourceTree = "<group>"; };
+		EB51422C2A2C850900E06AD6 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EB51422D2A2C850900E06AD6 /* from_developers_rus.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = from_developers_rus.txt; sourceTree = "<group>"; };
+		EB51422E2A2C850900E06AD6 /* instructions_for_testing.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = instructions_for_testing.md; sourceTree = "<group>"; };
+		EB51422F2A2C850900E06AD6 /* 7 principles of structural programming.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "7 principles of structural programming.md"; sourceTree = "<group>"; };
+		EB5142312A2C850900E06AD6 /* Dockerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dockerfile; sourceTree = "<group>"; };
+		EB5142322A2C850900E06AD6 /* run.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run.sh; sourceTree = "<group>"; };
+		EB5142342A2C850900E06AD6 /* style_tests.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = style_tests.py; sourceTree = "<group>"; };
+		EB5142352A2C850900E06AD6 /* build.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = build.py; sourceTree = "<group>"; };
+		EB5142362A2C850900E06AD6 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EB5142372A2C850900E06AD6 /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		EB5142382A2C850900E06AD6 /* style_tests.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = style_tests.sh; sourceTree = "<group>"; };
+		EB5142392A2C850900E06AD6 /* .clang-format */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".clang-format"; sourceTree = "<group>"; };
+		EB51423A2A2C850900E06AD6 /* test.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = test.sh; sourceTree = "<group>"; };
+		EB51423B2A2C850900E06AD6 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		EB51423C2A2C850900E06AD6 /* from_developers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = from_developers.txt; sourceTree = "<group>"; };
 		EBC65BF42A2C80DC009121C7 /* matrix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = matrix; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBC65BF72A2C80DD009121C7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EBEDA1FB2A2C8228008F5434 /* s21_matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = s21_matrix.c; sourceTree = "<group>"; };
+		EBEDA1FD2A2C822C008F5434 /* s21_matrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s21_matrix.h; sourceTree = "<group>"; };
+		EBEDA1FE2A2C8231008F5434 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EBEDA1FF2A2C8235008F5434 /* README_RUS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README_RUS.md; sourceTree = "<group>"; };
+		EBEDA2002A2C8239008F5434 /* CHANGELOG */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG; sourceTree = "<group>"; };
+		EBEDA2012A2C823D008F5434 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EBEDA2032A2C824F008F5434 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,10 +63,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB51422A2A2C850900E06AD6 /* materials */ = {
+			isa = PBXGroup;
+			children = (
+				EB51422B2A2C850900E06AD6 /* instructions_for_testing_rus.md */,
+				EB51422C2A2C850900E06AD6 /* .gitkeep */,
+				EB51422D2A2C850900E06AD6 /* from_developers_rus.txt */,
+				EB51422E2A2C850900E06AD6 /* instructions_for_testing.md */,
+				EB51422F2A2C850900E06AD6 /* 7 principles of structural programming.md */,
+				EB5142302A2C850900E06AD6 /* build */,
+				EB51423C2A2C850900E06AD6 /* from_developers.txt */,
+			);
+			path = materials;
+			sourceTree = "<group>";
+		};
+		EB5142302A2C850900E06AD6 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				EB5142312A2C850900E06AD6 /* Dockerfile */,
+				EB5142322A2C850900E06AD6 /* run.sh */,
+				EB5142332A2C850900E06AD6 /* scripts */,
+				EB51423B2A2C850900E06AD6 /* readme.txt */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		EB5142332A2C850900E06AD6 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				EB5142342A2C850900E06AD6 /* style_tests.py */,
+				EB5142352A2C850900E06AD6 /* build.py */,
+				EB5142362A2C850900E06AD6 /* .gitkeep */,
+				EB5142372A2C850900E06AD6 /* build.sh */,
+				EB5142382A2C850900E06AD6 /* style_tests.sh */,
+				EB5142392A2C850900E06AD6 /* .clang-format */,
+				EB51423A2A2C850900E06AD6 /* test.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		EB51423E2A2C85C200E06AD6 /* resourсes */ = {
+			isa = PBXGroup;
+			children = (
+				EBEDA1FE2A2C8231008F5434 /* README.md */,
+				EBEDA1FF2A2C8235008F5434 /* README_RUS.md */,
+				EBEDA2002A2C8239008F5434 /* CHANGELOG */,
+				EBEDA2012A2C823D008F5434 /* LICENSE */,
+			);
+			name = "resourсes";
+			sourceTree = "<group>";
+		};
 		EBC65BEB2A2C80DC009121C7 = {
 			isa = PBXGroup;
 			children = (
-				EBC65BF62A2C80DC009121C7 /* matrix */,
+				EBEDA2052A2C8289008F5434 /* src */,
+				EB51422A2A2C850900E06AD6 /* materials */,
+				EB51423E2A2C85C200E06AD6 /* resourсes */,
 				EBC65BF52A2C80DC009121C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +131,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EBC65BF62A2C80DC009121C7 /* matrix */ = {
+		EBEDA2052A2C8289008F5434 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				EBC65BF72A2C80DD009121C7 /* main.c */,
+				EBEDA2032A2C824F008F5434 /* main.c */,
+				EBEDA1FB2A2C8228008F5434 /* s21_matrix.c */,
+				EBEDA1FD2A2C822C008F5434 /* s21_matrix.h */,
+				EB5142282A2C845500E06AD6 /* Makefile */,
 			);
-			path = matrix;
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +199,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBC65BF82A2C80DD009121C7 /* main.c in Sources */,
+				EB5142292A2C845500E06AD6 /* Makefile in Sources */,
+				EBEDA2042A2C824F008F5434 /* main.c in Sources */,
+				EBEDA1FC2A2C8228008F5434 /* s21_matrix.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
