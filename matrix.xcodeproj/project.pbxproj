@@ -43,6 +43,12 @@
 		EB51423B2A2C850900E06AD6 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		EB51423C2A2C850900E06AD6 /* from_developers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = from_developers.txt; sourceTree = "<group>"; };
 		EBC65BF42A2C80DC009121C7 /* matrix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = matrix; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBDF00D62A2CB53300C6B0D9 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EBDF00D82A2CB54700C6B0D9 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EBDF00DA2A2CB54700C6B0D9 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EBDF00DE2A2CB55700C6B0D9 /* matrixx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matrixx.png; sourceTree = "<group>"; };
+		EBDF00DF2A2CB55700C6B0D9 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EBDF00E22A2CB55700C6B0D9 /* matrixx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matrixx.png; sourceTree = "<group>"; };
 		EBEDA1FB2A2C8228008F5434 /* s21_matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = s21_matrix.c; sourceTree = "<group>"; };
 		EBEDA1FD2A2C822C008F5434 /* s21_matrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s21_matrix.h; sourceTree = "<group>"; };
 		EBEDA1FE2A2C8231008F5434 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -105,6 +111,10 @@
 		EB51423E2A2C85C200E06AD6 /* resourсes */ = {
 			isa = PBXGroup;
 			children = (
+				EBDF00D52A2CB53300C6B0D9 /* datasets */,
+				EBDF00D92A2CB54700C6B0D9 /* code-samples */,
+				EBDF00D72A2CB54700C6B0D9 /* data-samples */,
+				EBDF00DB2A2CB55700C6B0D9 /* misc */,
 				EBEDA1FE2A2C8231008F5434 /* README.md */,
 				EBEDA1FF2A2C8235008F5434 /* README_RUS.md */,
 				EBEDA2002A2C8239008F5434 /* CHANGELOG */,
@@ -129,6 +139,72 @@
 				EBC65BF42A2C80DC009121C7 /* matrix */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EBDF00D52A2CB53300C6B0D9 /* datasets */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF00D62A2CB53300C6B0D9 /* .gitkeep */,
+			);
+			path = datasets;
+			sourceTree = "<group>";
+		};
+		EBDF00D72A2CB54700C6B0D9 /* data-samples */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF00D82A2CB54700C6B0D9 /* .gitkeep */,
+			);
+			path = "data-samples";
+			sourceTree = "<group>";
+		};
+		EBDF00D92A2CB54700C6B0D9 /* code-samples */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF00DA2A2CB54700C6B0D9 /* .gitkeep */,
+			);
+			path = "code-samples";
+			sourceTree = "<group>";
+		};
+		EBDF00DB2A2CB55700C6B0D9 /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF00DC2A2CB55700C6B0D9 /* eng */,
+				EBDF00DF2A2CB55700C6B0D9 /* .gitkeep */,
+				EBDF00E02A2CB55700C6B0D9 /* rus */,
+			);
+			path = misc;
+			sourceTree = "<group>";
+		};
+		EBDF00DC2A2CB55700C6B0D9 /* eng */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF00DD2A2CB55700C6B0D9 /* images */,
+			);
+			path = eng;
+			sourceTree = "<group>";
+		};
+		EBDF00DD2A2CB55700C6B0D9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF00DE2A2CB55700C6B0D9 /* matrixx.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		EBDF00E02A2CB55700C6B0D9 /* rus */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF00E12A2CB55700C6B0D9 /* images */,
+			);
+			path = rus;
+			sourceTree = "<group>";
+		};
+		EBDF00E12A2CB55700C6B0D9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EBDF00E22A2CB55700C6B0D9 /* matrixx.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		EBEDA2052A2C8289008F5434 /* src */ = {

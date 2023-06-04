@@ -200,6 +200,12 @@ int s21_transpose(matrix_t *A, matrix_t *result) {
     return err;
 }
 
+int s21_calc_comlements(matrix_t *A, matrix_t *result) {
+    int err = 0;
+    
+    return err;
+}
+
 void print_matrix(matrix_t *matrix) {
     for (int i = 0; i < matrix->rows; i++) {
         for (int j = 0; j < matrix->columns; j++) {
