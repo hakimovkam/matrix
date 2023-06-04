@@ -7,39 +7,6 @@
 
 #include "s21_matrix.h"
 
-int main(int argc, char *argv[]) {
-    int rows = 5;
-    int cols = 10;
-
-    matrix_t my_matrix;
-    int creation_result = s21_create_matrix(rows, cols, &my_matrix);
-
-    if (creation_result == 0) {
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                my_matrix.matrix[i][j] = i * cols + j;
-            }
-        }
-
-        print_matrix(&my_matrix);
-    } else {
-        printf("Ошибка при создании матрицы\n");
-    }
-
-    s21_remove_matrix(&my_matrix);
-
-    if (my_matrix.matrix == NULL) {
-        printf("Матрица очищена\n");
-    } else {
-        printf("Ошибка при очистке матрицы\n");
-        print_matrix(&my_matrix);
-    }
-
-    return 0;
-}
-
-
-
 int s21_create_matrix(int rows, int columns, matrix_t *result) {
     int err = 0;
     
@@ -109,6 +76,59 @@ int s21_eq_matrix(matrix_t *A, matrix_t *B) {
             }
         }
     }
+    return err;
+}
+
+int s21_sum_matrix(matrix_t *A, matrix_t *B, matrix_t *result) {
+    int err = 0;
+    int check_matrices_result = check_matrices(A, B);
+    if (A->rows != B->rows || A->columns != B->columns || check_matrices_result) {
+        err = 1;
+    }
+    
+    if (err != 1) {
+        int rows = A->rows;
+        int cols = A->columns;
+        int creation_result = s21_create_matrix(rows, cols, result);
+        
+        if (creation_result == 0) {
+            for (int i = 0; i < A->rows; i++) {
+                for (int j = 0; j < A->columns; j++) {
+                    result->matrix[i][j] = A->matrix[i][j] + B->matrix[i][j];
+                }
+            }
+        } else {
+            err = 1;
+        }
+    }
+    
+    return err;
+}
+
+int s21_sub_matrix(matrix_t *A, matrix_t *B, matrix_t *result) {
+    int err = 0;
+    int check_matrices_result = check_matrices(A, B);
+    if (A->rows != B->rows || A->columns != B->columns || check_matrices_result) {
+        err = 1;
+    }
+    
+    if (err != 1) {
+        int rows = A->rows;
+        int cols = A->columns;
+        int creation_result = s21_create_matrix(rows, cols, result);
+        
+        if (creation_result == 0) {
+            for (int i = 0; i < A->rows; i++) {
+                for (int j = 0; j < A->columns; j++) {
+                    result->matrix[i][j] = A->matrix[i][j] - B->matrix[i][j];
+                }
+            }
+        } else {
+            err = 1;
+        }
+    }
+    
+
     return err;
 }
 
