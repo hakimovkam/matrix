@@ -3,7 +3,7 @@ CFLAGS=-std=c11 -Wall -Werror -Wextra -g
 SOURCES=s21_matrix.c
 OBJECTS=$(SOURCES:.c=.o)
 OS = $(shell uname)
-TEST_FILE_NAME = s21_test_matrix.c
+TEST_FILE_NAME = s21_matrix_test.c
 
 ifeq ($(OS), Darwin)
 	TEST_LIBS=-lcheck
